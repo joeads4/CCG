@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 2321924449f515d4eb441abf7c64a974
+guid: a33e6520257d2df40ace4a87c9ce79fe
 TextureImporter:
   fileIDToRecycleName:
-    21300000: OneRibbon_0
+    21300000: kissclipart-yellow-diamond-gem-su-clipart-gemstone-pink-diamon-9ed8c953d1edbb0e_0
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -28,7 +28,7 @@ TextureImporter:
   generateCubemap: 6
   cubemapConvolution: 0
   seamlessCubemap: 0
-  textureFormat: -1
+  textureFormat: 1
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
@@ -47,11 +47,11 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 27, y: 1, z: 29, w: 16}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
-  spriteTessellationDetail: 0
+  spriteTessellationDetail: -1
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
@@ -85,37 +85,29 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: OneRibbon_0
+      name: kissclipart-yellow-diamond-gem-su-clipart-gemstone-pink-diamon-9ed8c953d1edbb0e_0
       rect:
         serializedVersion: 2
-        x: 28
-        y: 2
-        width: 206
-        height: 43
+        x: 0
+        y: 0
+        width: 3524
+        height: 3397
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 620747f932c943241b5dbbf3d116d144
+      spriteID: 33468f7778e56c2438a4426502f2fd29
       vertices: []
       indices: 
       edges: []
       weights: []
-    outline:
-    - - {x: -104, y: -28}
-      - {x: -104, y: 14}
-      - {x: 102, y: 14}
-      - {x: 102, y: -28}
-    - - {x: 101, y: -28}
-      - {x: 101, y: -28}
-      - {x: 103, y: -28}
-      - {x: 101, y: -28}
+    outline: []
     physicsShape: []
     bones: []
-    spriteID: f0aa72a97e18b17488deabda57d1597b
+    spriteID: 77ead44ddad13ae4f8f8adfe37fd672f
     vertices: []
     indices: 
     edges: []
