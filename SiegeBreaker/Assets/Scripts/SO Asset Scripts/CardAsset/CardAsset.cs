@@ -21,7 +21,8 @@ public class CardAsset : ScriptableObject
     [TextArea(2,3)]
     public string Description;  // Description for spell or character
 	public Sprite CardImage;
-    public int ManaCost;
+    public int BuilderManaCost;
+    public int RecruiterManaCost;
 
     [Header("Troop Info")]
     public int MaxHealth;

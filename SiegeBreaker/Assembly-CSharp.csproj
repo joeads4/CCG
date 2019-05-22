@@ -60,15 +60,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\BetterCardRotation.cs" />
     <Compile Include="Assets\Scripts\SO Asset Scripts\CardAsset\CardAsset.cs" />
     <Compile Include="Assets\Scripts\SO Asset Scripts\CharacterAsset\CharacterAsset.cs" />
-    <Compile Include="Assets\Scripts\UI Scripts\Outlines by N Yoda\BoxOutline.cs" />
-    <Compile Include="Assets\Scripts\UI Scripts\Outlines by N Yoda\CircleOutline.cs" />
-    <Compile Include="Assets\Scripts\UI Scripts\Outlines by N Yoda\ListPool.cs" />
-    <Compile Include="Assets\Scripts\UI Scripts\Outlines by N Yoda\ModifiedShadow.cs" />
-    <Compile Include="Assets\Scripts\UI Scripts\Outlines by N Yoda\ObjectPool.cs" />
-    <Compile Include="Assets\Scripts\UI Scripts\Outlines by N Yoda\Outline8.cs" />
+    <Compile Include="Assets\Scripts\UI Scripts\Visual\BetterCardRotation.cs" />
+    <Compile Include="Assets\Scripts\UI Scripts\Visual\OneCardManager.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>D:/Unity Projects/FinalGame/SiegeBreaker/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
