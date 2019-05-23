@@ -75,6 +75,7 @@
     <Compile Include="Assets\Scripts\UI Scripts\Outlines by N Yoda\Outline8.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\Visual\BetterCardRotation.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\Visual\HoverPreview.cs" />
+    <Compile Include="Assets\Scripts\UI Scripts\Visual\ManaPoolVisual.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\Visual\OneCardManager.cs" />
     <None Include="Assets\DOTween\readme.txt" />
     <None Include="Assets\DOTween\DOTween50.xml" />
