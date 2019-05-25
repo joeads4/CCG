@@ -77,6 +77,7 @@
     <Compile Include="Assets\Scripts\UI Scripts\Visual\HoverPreview.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\Visual\ManaPoolVisual.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\Visual\OneCardManager.cs" />
+    <Compile Include="Assets\Scripts\UI Scripts\Visual\SameDistanceChildren.cs" />
     <None Include="Assets\DOTween\readme.txt" />
     <None Include="Assets\DOTween\DOTween50.xml" />
     <None Include="Assets\DOTween\DOTween43.xml" />
