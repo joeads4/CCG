@@ -78,6 +78,7 @@
     <Compile Include="Assets\Scripts\UI Scripts\Visual\DamageEffectTest.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\Visual\HoverPreview.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\Visual\ManaPoolVisual.cs" />
+    <Compile Include="Assets\Scripts\UI Scripts\Visual\MessageManager.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\Visual\OneCardManager.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\Visual\OneCreatureManager.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\Visual\SameDistanceChildren.cs" />
