@@ -2,15 +2,12 @@
 using System.Collections;
 
 public class DrawACardCommand : Command {
-    // first argument
-    // "1" - fast
-    // "0" - normal
+  
 
     private Player p;
     private int handPos;
     private CardLogic cl;
     private bool fast;
-    private int ID;
     private bool fromDeck;
 
     public DrawACardCommand(CardLogic cl, Player p, int positionInHand, bool fast, bool fromDeck)
