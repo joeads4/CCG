@@ -5,9 +5,9 @@ using System.Collections.Generic;
 public enum TargetingOptions
 {
     NoTarget,
-    AllTroops, // Changed from AllCreatures
-    EnemyTroops, // Changed from EnemyCreatures
-    YourTroops, // Changed from  YourCreatures
+    AllUnits, // Changed from AllCreatures
+    EnemyUnits, // Changed from EnemyCreatures
+    YourUnits, // Changed from  YourCreatures
     AllCharacters, 
     EnemyCharacters,
     YourCharacters
@@ -24,18 +24,18 @@ public class CardAsset : ScriptableObject
     public int BuilderManaCost;
     public int RecruiterManaCost;
 
-    [Header("Troop Info")]
+    [Header("Unit Info")]
     public int MaxHealth;
     public int Attack;
     public int AttacksForOneTurn = 1;
     public bool Defend; // Changed from Taunt
     public bool Mounted; // Changed from Charge
-    public string TroopScriptName; // Changed from CreatureScriptName
-    public int specialTroopAmount; // Changed from specialCreatureAmount
+    public string UnitScriptName; // Changed from CreatureScriptName
+    public int specialUnitAmount; // Changed from specialCreatureAmount
 
     [Header("Tactic Info")]
-    public string tacticScriptName; // Changed from SpellScriptName
-    public int specialTacticAmount; // Changed from specialSpellAmount
+    public string TacticScriptName; // Changed from SpellScriptName
+    public int SpecialTacticAmount; // Changed from specialSpellAmount
     public TargetingOptions Targets;
 
 }
