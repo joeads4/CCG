@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 public static class IDFactory {
 
-    public static int Count;
+    private static int Count;
 
     public static int GetUniqueID()
     {
