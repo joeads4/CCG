@@ -2,7 +2,8 @@
 using System.Collections;
 using DG.Tweening;
 
-public class DragCreatureOnTable : DraggingActions {
+public class DragCreatureOnTable : DraggingActions
+{
 
     private int savedHandSlot;
     private WhereIsTheCardOrCreature whereIsCard;
@@ -10,10 +11,14 @@ public class DragCreatureOnTable : DraggingActions {
     private VisualStates tempState;
     private OneCardManager manager;
 
-    public override bool CanDrag =>
+    public override bool CanDrag
+    {
+        get
+        {
             // TODO : include full field check
-            base.CanDrag && manager.CanBePlayedNow;
-    //TODO return true;
+            return base.CanDrag && manager.CanBePlayedNow;
+        }
+    }
 
     void Awake()
     {
@@ -37,7 +42,7 @@ public class DragCreatureOnTable : DraggingActions {
 
     public override void OnEndDrag()
     {
-        
+
         // 1) Check if we are holding a card over the table
         if (DragSuccessful())
         {
@@ -57,12 +62,12 @@ public class DragCreatureOnTable : DraggingActions {
             HandVisual PlayerHand = playerOwner.PArea.handVisual;
             Vector3 oldCardPos = PlayerHand.slots.Children[savedHandSlot].transform.localPosition;
             transform.DOLocalMove(oldCardPos, 1f);
-        } 
+        }
     }
 
     protected override bool DragSuccessful()
     {
-        bool TableNotFull = playerOwner.table.CreaturesOnTable.Count < 8;
+        bool TableNotFull = (playerOwner.table.CreaturesOnTable.Count < 8);
 
         return TableVisual.CursorOverSomeTable && TableNotFull;
     }
