@@ -82,7 +82,7 @@ public class TableVisual : MonoBehaviour
 
         // add tag according to owner
         foreach (Transform t in creature.GetComponentsInChildren<Transform>())
-            t.tag = owner.ToString()+"Creature";
+            t.tag = owner.ToString()+"Unit";
         
         // parent a new creature gameObject to table slots
         creature.transform.SetParent(slots.transform);

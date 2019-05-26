@@ -10,15 +10,10 @@ public class DragCreatureOnTable : DraggingActions {
     private VisualStates tempState;
     private OneCardManager manager;
 
-    public override bool CanDrag
-    {
-        get
-        {
+    public override bool CanDrag =>
             // TODO : include full field check
-            // TODO return base.CanDrag && manager.CanBePlayedNow;
-            return true;
-        }
-    }
+            base.CanDrag && manager.CanBePlayedNow;
+    //TODO return true;
 
     void Awake()
     {
@@ -67,7 +62,7 @@ public class DragCreatureOnTable : DraggingActions {
 
     protected override bool DragSuccessful()
     {
-        bool TableNotFull = (playerOwner.table.CreaturesOnTable.Count < 8);
+        bool TableNotFull = playerOwner.table.CreaturesOnTable.Count < 8;
 
         return TableVisual.CursorOverSomeTable && TableNotFull;
     }

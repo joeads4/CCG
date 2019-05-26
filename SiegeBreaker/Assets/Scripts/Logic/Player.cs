@@ -115,11 +115,11 @@ public class Player : MonoBehaviour, ICharacter
     }
 
     //FOR TESTING ONLY
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.D))
-            DrawACard();
-    }
+    //void Update()
+   // {
+     //   if (Input.GetKeyDown(KeyCode.D))
+    //        DrawACard();
+   // }
     public void DrawACard(bool fast = false)
     {
         if (deck.cards.Count > 0)
@@ -272,7 +272,7 @@ public class Player : MonoBehaviour, ICharacter
 
     public void TransmitInfoAboutPlayerToVisual()
     {
-        PArea.Portrait.GetComponent<IDHolder>().UniqueID = PlayerID;
+        PArea.Portrait.gameObject.AddComponent<IDHolder>().UniqueID = PlayerID;
         if (GetComponent<TurnMaker>() is AITurnMaker)
         {
             // turn off turn making for this character

@@ -45,9 +45,9 @@ public class TurnManager : MonoBehaviour {
         timer = GetComponent<RopeTimer>();
     }
 
-    void Start()
+    private void Start()
     {
-      //TODO  OnGameStart();
+        OnGameStart();
     }
 
     public void OnGameStart()
@@ -75,7 +75,7 @@ public class TurnManager : MonoBehaviour {
         s.OnComplete(() =>
             {
                 // determine who starts the game.
-                int rnd = Random.Range(0,2);  // 2 is exclusive boundary
+                int rnd = Random.Range(0, 2);  // 2 is exclusive boundary
                 // Debug.Log(Player.Players.Length);
                 Player whoGoesFirst = Player.Players[rnd];
                 // Debug.Log(whoGoesFirst);

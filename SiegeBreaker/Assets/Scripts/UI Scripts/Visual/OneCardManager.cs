@@ -39,9 +39,7 @@ public class OneCardManager : MonoBehaviour {
 
         set
         {
-            canBePlayedNow = value;
-
-            CardFaceGlowImage.enabled = value;
+            canBePlayedNow = value;//CardFaceGlowImage.enabled = value;
         }
     }
 

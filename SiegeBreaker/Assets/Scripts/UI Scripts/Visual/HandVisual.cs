@@ -101,7 +101,7 @@ public class HandVisual : MonoBehaviour
         if (c.MaxHealth > 0)
         {
             // this card is a creature card
-            card = GameObject.Instantiate(GlobalSettings.Instance.CreatureCardPrefab, position, Quaternion.Euler(eulerAngles)) as GameObject;
+            card = Instantiate(GlobalSettings.Instance.CreatureCardPrefab, position, Quaternion.Euler(eulerAngles)) as GameObject;
         }
         else
         {

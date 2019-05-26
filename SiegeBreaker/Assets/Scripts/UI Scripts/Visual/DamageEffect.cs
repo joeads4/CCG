@@ -8,7 +8,8 @@ using DG.Tweening;
 /// This class will show damage dealt to creatures or payers
 /// </summary>
 
-public class DamageEffect : MonoBehaviour {
+public class DamageEffect : MonoBehaviour
+{
 
     // an array of sprites with different blood splash graphics
     public Sprite[] Splashes;
@@ -26,7 +27,7 @@ public class DamageEffect : MonoBehaviour {
     void Awake()
     {
         // pick a random image
-        DamageImage.sprite = Splashes[Random.Range(0, Splashes.Length)];  
+        DamageImage.sprite = Splashes[Random.Range(0, Splashes.Length)];
     }
 
     // A Coroutine to control the fading of this damage effect
@@ -51,17 +52,15 @@ public class DamageEffect : MonoBehaviour {
     /// </summary>
     /// <param name="position">Position.</param>
     /// <param name="amount">Amount.</param>
-   
+
     public static void CreateDamageEffect(Vector3 position, int amount)
     {
         // Instantiate a DamageEffect from prefab
-        GameObject newDamageEffect = new GameObject();
-        //TODO = GameObject.Instantiate(GlobalSettings.Instance.DamageEffectPrefab, position, Quaternion.identity) as GameObject;
-        newDamageEffect = GameObject.Instantiate(DamageEffectTest.Instance.DamagePrefab, position, Quaternion.identity) as GameObject;
+        GameObject newDamageEffect = GameObject.Instantiate(GlobalSettings.Instance.DamageEffectPrefab, position, Quaternion.identity) as GameObject;
         // Get DamageEffect component in this new game object
         DamageEffect de = newDamageEffect.GetComponent<DamageEffect>();
         // Change the amount text to reflect the amount of damage dealt
-        de.AmountText.text = "-"+amount.ToString();
+        de.AmountText.text = "-" + amount.ToString();
         // start a coroutine to fade away and delete this effect after a certain time
         de.StartCoroutine(de.ShowDamageEffect());
     }

@@ -31,19 +31,15 @@ public class DragCreatureAttack : DraggingActions {
         whereIsThisCreature = GetComponentInParent<WhereIsTheCardOrCreature>();
     }
 
-    public override bool CanDrag
-    {
-        get
-        {
+    public override bool CanDrag =>
             // we can drag this card if 
             // a) we can control this our player (this is checked in base.canDrag)
             // b) creature "CanAttackNow" - this info comes from logic part of our code into each creature`s manager script
 
             //TODO Testing
-            return true;
-            // TODO return base.CanDrag && manager.CanAttackNow;
-        }
-    }
+            //return true;
+
+            base.CanDrag && manager.CanAttackNow;
 
     public override void OnStartDrag()
     {
