@@ -42,8 +42,8 @@ public class HeroPowerButton : MonoBehaviour
 
         set
         {
-            highlighted = value;
-            Glow.SetActive(highlighted);
+           highlighted = value;
+//            Glow.SetActive(highlighted);
         }
     }
 

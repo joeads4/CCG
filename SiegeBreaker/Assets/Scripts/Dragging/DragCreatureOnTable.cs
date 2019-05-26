@@ -52,6 +52,9 @@ public class DragCreatureOnTable : DraggingActions
             // Debug.Log("Table Pos for new Creature: " + tablePos.ToString());
             // play this card
             playerOwner.PlayACreatureFromHand(GetComponent<IDHolder>().UniqueID, tablePos);
+            TableVisual tableVisual = playerOwner.PArea.tableVisual;
+            Vector3 newCardPos = tableVisual.slots.Children[tablePos].transform.localPosition;
+            transform.DOLocalMove(newCardPos, 1f);
         }
         else
         {
