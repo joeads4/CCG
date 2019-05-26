@@ -26,15 +26,15 @@ public class TurnManager : MonoBehaviour {
 
             GlobalSettings.Instance.EnableEndTurnButtonOnStart(_whoseTurn);
 
-            TurnMaker tm = whoseTurn.GetComponent<TurnMaker>();
-            // player`s method OnTurnStart() will be called in tm.OnTurnStart();
-            tm.OnTurnStart();
-            if (tm is PlayerTurnMaker)
-            {
-                whoseTurn.HighlightPlayableCards();
-            }
+         //   TurnMaker tm = whoseTurn.GetComponent<TurnMaker>();
+  //          // player`s method OnTurnStart() will be called in tm.OnTurnStart();
+  //          tm.OnTurnStart();
+ //           if (tm is PlayerTurnMaker)
+ //           {
+ //               whoseTurn.HighlightPlayableCards();
+ //           }
             // remove highlights for opponent.
-            whoseTurn.otherPlayer.HighlightPlayableCards(true);
+  //          whoseTurn.otherPlayer.HighlightPlayableCards(true);
                 
         }
     }
