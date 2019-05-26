@@ -249,7 +249,7 @@ public class Player : MonoBehaviour, ICharacter
         }
             
         // highlight hero power
-        PArea.HeroPower.Highlighted = (!usedHeroPowerThisTurn) && (ManaLeft > 1) && !removeAllHighlights;
+ //       PArea.HeroPower.Highlighted = (!usedHeroPowerThisTurn) && (ManaLeft > 1) && !removeAllHighlights;
     }
 
     // START GAME METHODS

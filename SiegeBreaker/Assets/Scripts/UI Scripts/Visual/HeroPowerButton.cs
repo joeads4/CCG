@@ -8,7 +8,7 @@ public class HeroPowerButton : MonoBehaviour {
     public GameObject Front;
     public GameObject Back;
 
-    public GameObject Glow;
+ //   public GameObject Glow;
 
     private bool wasUsed = false;
     public bool WasUsedThisTurn
@@ -29,26 +29,26 @@ public class HeroPowerButton : MonoBehaviour {
             {
                 Front.SetActive(false);
                 Back.SetActive(true);
-                Highlighted = false;
+//                Highlighted = false;
             }
         }
     }
 
-    private bool highlighted = false;
-    public bool Highlighted
-    {
-        get{ return highlighted; }
+//    private bool highlighted = false;
+//    public bool Highlighted
+//    {
+//        get{ return highlighted; }
 
-        set
-        {
-            highlighted = value;
-            Glow.SetActive(highlighted);
-        }
-    }
+ //       set
+ //       {
+ //           highlighted = value;
+ //           Glow.SetActive(highlighted);
+ //       }
+  //  }
 
     void OnMouseDown()
     {
-        if (!WasUsedThisTurn && Highlighted)
+        if (!WasUsedThisTurn)
         {
             GlobalSettings.Instance.Players[owner].UseHeroPower();
             WasUsedThisTurn= !WasUsedThisTurn;
