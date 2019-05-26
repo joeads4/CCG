@@ -91,14 +91,14 @@ public class DragCreatureAttack : DraggingActions
 
         foreach (RaycastHit h in hits)
         {
-            if ((h.transform.tag == "TopPlayer" && this.tag == "LowCreature") ||
-                (h.transform.tag == "LowPlayer" && this.tag == "TopCreature"))
+            if ((h.transform.tag == "TopPlayer" && this.tag == "LowUnit") ||
+                (h.transform.tag == "LowPlayer" && this.tag == "TopUnit"))
             {
                 // go face
                 Target = h.transform.gameObject;
             }
-            else if ((h.transform.tag == "TopCreature" && this.tag == "LowCreature") ||
-                    (h.transform.tag == "LowCreature" && this.tag == "TopCreature"))
+            else if ((h.transform.tag == "TopUnit" && this.tag == "LowUnit") ||
+                    (h.transform.tag == "LowUnit" && this.tag == "TopUnit"))
             {
                 // hit a creature, save parent transform
                 Target = h.transform.parent.gameObject;
@@ -133,7 +133,10 @@ public class DragCreatureAttack : DraggingActions
         if (!targetValid)
         {
             // not a valid target, return
-            whereIsThisCreature.VisualState = VisualStates.LowTable;
+            if(tag.Contains("Low"))
+                whereIsThisCreature.VisualState = VisualStates.LowTable;
+            else
+                whereIsThisCreature.VisualState = VisualStates.TopTable;
             whereIsThisCreature.SetTableSortingOrder();
         }
 

@@ -1,6 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
-using System.Collections.Generic;
 
 // an enum to store the info about where this object is
 public enum VisualStates
@@ -97,7 +95,7 @@ public class WhereIsTheCardOrCreature : MonoBehaviour {
     public void SetTableSortingOrder()
     {
         canvas.sortingOrder = 0;
-        canvas.sortingLayerName = "Creatures";
+        canvas.sortingLayerName = "Units";
     }
 
     private int HandSortingOrder(int placeInHand)
